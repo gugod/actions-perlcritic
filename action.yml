@@ -18,6 +18,5 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - perlcritic
     - "${{ inputs.options }}"
     - "${{ inputs.directory }}"
