@@ -1,7 +1,20 @@
+---
+name: "gugod-perlcritic"
+description: "perlcritic by gugod"
+author: "Kang-min Liu <gugod@gugod.org>"
+inputs:
+  directory:
+    description: "Directory to lint"
+    required: false
+    default: .
+  options:
+    description: "Additional options"
+    required: false
+    default: "-p .perlcriticrc"
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-  - '-p'
-  - '.perlcriticrc'
-  - '.'
+    - perlcritic
+    - "${{ inputs.options }}"
+    - "${{ inputs.directory }}"
