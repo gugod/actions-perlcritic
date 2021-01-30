@@ -2,6 +2,9 @@
 name: "gugod-perlcritic"
 description: "perlcritic by gugod"
 author: "Kang-min Liu <gugod@gugod.org>"
+branding:
+  icon: "check-circle"
+  color: "green"
 inputs:
   directory:
     description: "Directory to lint"
