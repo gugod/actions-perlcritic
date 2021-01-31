@@ -13,7 +13,7 @@ inputs:
   options:
     description: "Additional options"
     required: false
-    default: "-p .perlcriticrc"
+    default: ""
 runs:
   using: 'docker'
   image: 'docker://ghcr.io/gugod/actions-perlcritic:latest'
