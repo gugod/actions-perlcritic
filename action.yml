@@ -16,7 +16,7 @@ inputs:
     default: "-p .perlcriticrc"
 runs:
   using: 'docker'
-  image: 'docker://gugod/perlcritic:latest'
+  image: 'docker://ghcr.io/gugod/actions-perlcritic:latest'
   args:
     - "${{ inputs.options }}"
     - "${{ inputs.directory }}"
