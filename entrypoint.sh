@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-perlcritic --quiet -p .perlcriticrc $* && echo "All source OK"
+perlcritic $INPUT_OPTIONS $INPUT_DIRECTORY

@@ -11,12 +11,9 @@ inputs:
     required: false
     default: .
   options:
-    description: "Additional options"
+    description: "Options to perlcritic"
     required: false
-    default: ""
+    default: "--quiet -p .perlcriticrc"
 runs:
   using: 'docker'
   image: 'docker://ghcr.io/gugod/actions-perlcritic:latest'
-  args:
-    - "${{ inputs.options }}"
-    - "${{ inputs.directory }}"
