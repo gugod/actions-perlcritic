@@ -6,8 +6,8 @@ branding:
   icon: "check-circle"
   color: "green"
 inputs:
-  directory:
-    description: "Directory to lint"
+  paths:
+    description: "Paths (directories or files) lint"
     required: false
     default: .
   options:

@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-perlcritic $INPUT_OPTIONS $INPUT_DIRECTORY
+perlcritic $INPUT_OPTIONS $INPUT_PATHS
