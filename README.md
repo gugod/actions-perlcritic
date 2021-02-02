@@ -55,14 +55,14 @@ This minimum setup should be enough as a starter.
 
 ```yaml
   - name: perlcritic
-    uses: gugod/actions-perlcritic@v1.0.0
+    uses: gugod/actions-perlcritic@v1.0
 ```
 
 For working with typical CPAN module, this should be better, as we generally do not need to critic `Build.PL` or `Makefile.PL`:
 
 ```yaml
   - name: perlcritic
-    uses: gugod/actions-perlcritic@v1.0.0
+    uses: gugod/actions-perlcritic@v1.0
     with:
       paths: "lib t"
 ```
@@ -72,7 +72,7 @@ Remove `--quiet` in the case case when you prefer to see those
   
 ```yaml
   - name: perlcritic
-    uses: gugod/actions-perlcritic@v1.0.0
+    uses: gugod/actions-perlcritic@v1.0
     with:
       paths: "lib t"
       options: "-p .perlcriticrc"
